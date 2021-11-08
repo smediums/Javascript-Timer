@@ -21,24 +21,82 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #111;
 }
 
-body button {
+body .timeDisplay {
   width: 85%;
   max-width: 400px;
   font-size: 2.5rem;
   border-radius: 10px;
-  background-color: #ddd;
-  mix-blend-mode: multiply;
+  background-color: #666666;
   border: none;
   margin-bottom: 2rem;
   color: #333;
   cursor: pointer;
 }
 
-body p {
-  font-size: 2.5rem;
-  color: #555;
-  mix-blend-mode: hard-light;
+body .timeDisplay h1 {
+  text-align: center;
+}
+
+body .select {
+  margin: 1rem 0;
+  position: relative;
+}
+
+body .select label {
+  position: absolute;
+  color: #666666;
+  top: -1.5rem;
+  font-size: 1rem;
+}
+
+body .select label:nth-of-type(1) {
+  left: calc(0.5rem + 15px);
+}
+
+body .select label:nth-of-type(2) {
+  left: calc(80px + 3rem);
+}
+
+body .select select {
+  font-size: 2rem;
+  margin: 0 0.6rem;
+  background: transparent;
+  width: 80px;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+}
+
+body .select select:focus {
+  outline: none;
+}
+
+body .startStop {
+  position: absolute;
+  bottom: 2.2rem;
+}
+
+body .startStop button {
+  height: 50px;
+  width: 50px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  border: none;
+  margin: 0rem 3.2rem;
+  background: rgba(68, 85, 68, 0.769);
+  cursor: pointer;
+}
+
+body .startStop button::after {
+  content: 'Start';
+  position: absolute;
+  top: -1.5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #666666;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
